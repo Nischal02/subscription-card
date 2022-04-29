@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0%;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    /* margin: auto; */
+    max-width: 420px;
+    /* height: 100vh; */
+    /* max-height: 80%; */
+}
+
+#main .top-img {
+    position: relative;
+    top: 50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('./images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    
+}
+/* #main .top-img img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 420px;
+} */
+
+#container {
+    border: 1px solid hsl(225, 100%, 98%);
+    /* width: 450px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    align-items: center;
+    background-color: #ffff;
+    box-shadow: 9px 54px 41px -1px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 9px 54px 41px -1px rgba(0,0,0,0.18);
+    -moz-box-shadow: 9px 54px 41px -1px rgba(0,0,0,0.18);
+}
+
+#container .content {
+    /* text-align: center; */
+    padding: 1.5rem;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#container .content h1 {
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+#container .content p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+#container .subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+#container .subscription .plan-container {
+    display: flex;
+    gap: 15px;
+}
+
+#container .subscription .plan h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#container .subscription .plan p {
+    color: hsl(224, 23%, 55%);
+}
+
+#container .subscription .plan-link a {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+#container .subscription .plan-link a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition: 0.3s;
+}
+
+#container .payment {
+    background-color: hsl(245, 75%, 52%);
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    box-shadow: 4px 31px 31px -7px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 4px 31px 31px -7px rgba(0,0,0,0.13);
+    -moz-box-shadow: 4px 31px 31px -7px rgba(0,0,0,0.13);
+}
+
+#container .payment:hover {
+    background-color: hsl(224, 23%, 55%);
+    transition: 0.2s;
+}
+
+#container .cancel {
+    border: none;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#container .cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
